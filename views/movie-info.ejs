@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="../stylesheets/style2.css">
+
+	<script type="text/javascript">
+		const imageBaseUrl = 'http://image.tmdb.org/t/p/';
+	</script>
+
+</head>
+<body>
+
+	<h1 class=text-center><%=movieData.title%></h1>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-5">
+
+				<img id="poster" src="<%=imageBaseUrl + movieData.poster_path%>">
+			</div>
+			<div class="col-sm-7">
+				<p><%=movieData.overview%></p>
+				<p>Runtime: <%=movieData.runtime%> minutes</p>
+				<p>Release Date: <%=movieData.release_date%></p>
+				<p>Rating: <%=movieData.popularity%></p>
+			</div>
+		
+		</div>
+	</div>
+
+
+
+
+
+</body>
+</html>
